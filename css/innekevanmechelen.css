@@ -1,0 +1,488 @@
+/*blauw: #5fbcd3ff,
+oranje: #d44b00fe,
+grijs: 666666ff*/
+
+/*mobile first*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #666666;
+}
+h1 {
+    font-family:'Architects Daughter', cursive;
+    font-size: 4rem;
+    position: relative;
+    
+} 
+
+h2 {
+    font-weight: lighter;
+}
+
+.row {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+header,
+section,
+footer{    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+.span1 {
+    padding: 0 1%;
+}
+.center {
+    display: flex;   
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/***header***/
+/*nav*/
+nav ul {
+    display: block;
+    margin: 0;
+    padding: 2% 1%;
+}
+nav li {
+    margin: 1% 0;
+    display: block;
+
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover, active {
+    color: #d44b00;
+}
+/*titel*/
+header section:last-child {
+    background: #5fbcd3; 
+}
+header h1 {
+    color: #5fbcd3
+}
+#wie .foto {
+    width: 20em;
+    height: 20em;
+    background-image: url(../img/DSC_0283.jpg);
+    background-size: 100%;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #d44b00;
+    margin: 2% auto;
+}
+.span1 {
+    padding: 4% 0;
+}
+
+/***wie***/
+#wie {
+    background: #666666;
+    color: white;
+       z-index: 0;
+       position: relative;
+    
+    
+}
+#wie h1 {
+    color: #d44b00;  
+   
+}
+#wie p{
+    line-height: 2em;
+}
+blockquote {
+    border: none;        
+}
+blockquote:before {
+    content: open-quote;
+    color:#5fbcd3;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 6em;
+    vertical-align: -0.4em;
+    margin-right: 0.25em;
+    line-height: 0em;
+}
+blockquote:after {
+    content: close-quote;
+    color:#5fbcd3;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 6em;
+    vertical-align: -0.5em;
+    margin-left: 0.25em;
+    line-height: 0em;
+}
+blockquote p {
+    display: inline;
+}
+
+/***curriculum***/
+
+#curriculum h1 {
+    color: #5fbcd3;
+   
+}
+
+.fa {
+    display: hide;   
+}
+
+#curriculum h2 {
+    color: #d44b00;    
+}
+
+.periode {
+    color:  #d44b00;
+}
+#curriculum h2,
+#curriculum h3,
+#curriculum h4,
+#curriculum p {
+    margin: 0.1em;
+}
+#curriculum h3 {
+    font-size: 1em;
+}
+#curriculum h4 {
+    font-size: 1em;
+    color: #666666;
+}
+#curriculum p {
+    font-size: 0.8em;
+}
+
+
+/*
+#curriculum h3:before {
+    content: '• ';
+    color: #5fbcd3;
+}
+#curriculum h3:after {
+    content: ' •';
+    color: #5fbcd3;
+}*/
+
+/*kennis*/
+#kennis {
+    background: #d44b00;
+    z-index: 0;
+       position: relative;
+}
+
+#kennis h1 {
+    color: #666666;
+}
+
+
+.percent{
+    width: 7.5em; 
+    padding: 0;
+    margin: 0 auto;
+}
+
+.skill {        
+    text-align: center;
+}
+/*portfolio*/
+.portfolio {
+    display: none;
+}
+footer{
+    background: #5fbcd3;
+    z-index: 0;
+       position: relative;
+    
+}
+footer h1 {
+    color: white;
+}
+
+/*** ribbons***/
+
+/**ribon kleuren**/
+
+/*hoofdkleur*/
+.rb-oranje {
+    background: #d44b00;
+}
+.rb-blauw {
+    background: #5fbcd3;
+}
+.rb-wit {
+    background: white;    
+}
+.rb-grijs {
+    background: #666666;    
+}
+/*achterkant*/
+.rb-oranje:before, .rb-oranje:after {
+    border: 0.8em solid #bb4200;
+}
+.rb-blauw:before, .rb-blauw:after {
+    border: 0.8em solid #4bb4ce;
+}
+.rb-wit:before, .rb-wit:after {
+    border: 0.8em solid #fcfcfc;
+}
+.rb-grijs:before, .rb-grijs:after {
+    border: 0.8em solid #636363;
+}
+/*terugflap*/
+.rb-oranje .content:before, .rb-oranje .content:after {
+    border-color: #a13900 transparent transparent transparent;
+}
+.rb-blauw .content:before, .rb-blauw .content:after {
+    border-color: #329ab4 transparent transparent transparent;
+}
+.rb-wit .content:before, .rb-wit .content:after{
+    border-color: #f7f7f7 transparent transparent transparent;
+}
+.rb-grijs .content:before, .rb-grijs .content:after{
+     border-color: #5e5e5e transparent transparent transparent;
+}
+
+
+/*ribbon algemeen*/
+.ribbon {
+   padding: 0 2em;  
+   
+   }
+   
+  
+.ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -0.45em;
+    z-index: -2;
+}
+.ribbon:before {
+    left: -1em;
+    border-right-width: 1em;
+    border-left-color: transparent;
+}
+.ribbon:after {
+    right: -1em;
+    border-left-width: 1em;
+    border-right-color: transparent;
+}
+
+.ribbon .content:before, .ribbon .content:after {
+    position: absolute;
+    display: block;
+    border-style: solid;
+    bottom: -0.7em;
+    content: '';
+    z-index: -1;
+}
+.ribbon .content:before {
+    left: 0%;
+    border-width: 0.8em 0 0 0.8em;
+    transform: skew(00deg, -32deg);
+}
+
+.ribbon .content:after {
+    right: 0;
+    border-width: 0.8em 0.8em 0 0;
+    transform: skew(00deg, 32deg);
+}
+
+/*clearfix*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+@media screen and (min-width: 768px) {
+    .row {
+        position: relative;
+    }
+    .span1 {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        display: none;
+    }
+    /***header***/
+
+    header h2 {
+        display: inline;
+    }
+
+    /*navigatiebalk*/
+
+    .navigatie {
+        padding: 0.8em 0;
+    }
+    nav ul {
+        float: right;       
+        margin: 0;
+        padding: 0;
+    }
+    nav li{
+        float: left; 
+        margin: 0 1em;
+    }
+    /*nav li a{
+        background: white;
+        color: #666666;
+        display: block;
+        width: 6em;
+        height: 6em;
+        border-radius: 50%; 
+        text-align: center;
+        line-height: 6em;
+    }
+    nav li a:hover, active {
+        background-color: #d44b00;
+        color: white;
+        text-decoration: none;
+    }*/
+    /*titel*/
+
+    header section:last-child {
+        text-align: right;       
+
+    }
+
+    #wie p {
+        text-align: justify;
+    }
+
+    .vertical-center {
+        display: flex;
+        align-items: center;  
+        flex-direction: row;
+    }
+    .reverse {
+        flex-flow: row-reverse;
+    }
+    .pull-sm-right {
+        float: right;
+    }
+    #wie .foto {
+        float: right;
+    }
+
+
+
+
+    
+
+    /*curriculum*/
+
+    
+.studie,
+    .werk {
+        padding: 0;
+        margin: 0 0 1.5em 0;     
+    }
+    .flip-l h1 span {
+
+        /*-webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        display: inline-block;
+        transform-origin: top left;
+        margin-top: 100%;*/
+    }
+
+
+    /* .hoed,
+     .koffer {
+         width: 6em;
+         height: 6em;
+         border-radius: 50%;
+         border: 1px solid #d44b00;       
+         margin: 1em 0;
+     }*/
+    .hoed,
+    .koffer {
+        font-size: 2em;
+    }
+    .hoed .fa,
+    .koffer .fa {
+        color: #d44b00;       
+    }
+    .hoed .fa-graduation-cap,
+    .koffer .fa-suitcase ,
+    .envelop .fa-envelope {
+        color: white;       
+    }
+
+
+    /*i{
+        border-radius: 50%;
+        background: #d44b00;
+        color: white;
+        margin: 1em 0;
+        text-align: center;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        vertical-align: central;
+    }*/
+
+
+
+
+    .studie, .werk {
+        border-bottom: 1px solid #5fbcd3;
+        padding: 0 0 1em 0;
+
+    }
+    #werk {
+
+    }
+
+    /*kennis*/
+    /*contact*/
+    .envelop .fa,
+    .linkedin .fa{
+        color: white;
+    }
+    .envelop .fa-envelope,
+    .linkedin .fa-linkedin{
+        color: #5fbcd3;
+    }
+    .email {
+        width: 100%;
+    }
+
+} 
+
