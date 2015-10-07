@@ -11,13 +11,14 @@ body {
     padding: 0;
     height: 100%;
     color: #666666;
+    background-image: url(../img/crossword.png);
 }
 h1 {
     font-family:'Architects Daughter', cursive;
     font-size: 4rem;
     position: relative;
-    
-} 
+    margin:1em 0;      
+ } 
 
 h2 {
     font-weight: lighter;
@@ -51,6 +52,7 @@ footer{
 
 /***header***/
 /*nav*/
+
 nav ul {
     display: block;
     margin: 0;
@@ -67,15 +69,23 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover, active {
+nav li a:hover, nav li a:active {
     color: #d44b00;
+    text-decoration: none;
 }
 /*titel*/
-header section:last-child {
+header section:first-child {
     background: #5fbcd3; 
 }
 header h1 {
-    color: #5fbcd3
+    color: #5fbcd3;
+    margin: 0;    
+}
+.banner .span1:first-child {
+    padding-bottom: 0;
+}
+.banner .span1:last-child {
+    padding-top: 0;
 }
 #wie .foto {
     width: 20em;
@@ -166,6 +176,9 @@ blockquote p {
 #curriculum p {
     font-size: 0.8em;
 }
+#curriculum section {
+    margin: 1.5em 0;
+}
 
 
 /*
@@ -200,9 +213,31 @@ blockquote p {
     text-align: center;
 }
 /*portfolio*/
-.portfolio {
-    display: none;
+#portfolio {
+    z-index: 0;
+    position: relative;
 }
+
+#portfolio .portfolio {
+    width: 15em;    
+    padding: 0;
+    margin: 0 auto
+}
+
+.link  {
+      width: 12em; 
+     height: 12em;    
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #d44b00;
+    margin: 2% auto;   
+}
+
+.portfolio .webontwikkelaar {
+    background-size: 150%;
+    background-image: url(../img/Webontwikkelaar-taak_deel1.png); 
+}
+
 footer{
     background: #5fbcd3;
     z-index: 0;
@@ -213,6 +248,44 @@ footer h1 {
     color: white;
 }
 
+/*clearfix*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+@media screen and (min-width: 768px) {
+    .row {
+        position: relative;
+    }
+    .span1 {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        display: none;
+    }
+    
+    
 /*** ribbons***/
 
 /**ribon kleuren**/
@@ -303,44 +376,17 @@ footer h1 {
     transform: skew(00deg, 32deg);
 }
 
-/*clearfix*/
-
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
-@media screen and (min-width: 768px) {
-    .row {
-        position: relative;
-    }
-    .span1 {
-        width: 80%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    h1 {
-        font-size: 4em;
-    }
-
-    h2 {
-        display: none;
-    }
     /***header***/
-
+header {
+    position: relative;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+left: 0;
+width: 100%;
+z-index: 100;
+}
     header h2 {
         display: inline;
     }
@@ -409,7 +455,9 @@ footer h1 {
 
     
 .studie,
-    .werk {
+    .werk
+    
+    {
         padding: 0;
         margin: 0 0 1.5em 0;     
     }
@@ -432,17 +480,23 @@ footer h1 {
          margin: 1em 0;
      }*/
     .hoed,
-    .koffer {
+    .koffer,
+    .boek {
         font-size: 2em;
     }
     .hoed .fa,
-    .koffer .fa {
+    .koffer .fa,
+    .boek .fa {
         color: #d44b00;       
     }
     .hoed .fa-graduation-cap,
     .koffer .fa-suitcase ,
-    .envelop .fa-envelope {
-        color: white;       
+    .envelop .fa-envelope,
+    .boek .fa-book{
+        color: white;  
+        -ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+    transform: rotate(-15deg);
     }
 
 

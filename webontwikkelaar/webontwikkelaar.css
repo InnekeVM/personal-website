@@ -1,0 +1,418 @@
+/*
+css voor de taak "webontwikkelaar 1"
+*/
+/* 
+    Created on : 27-aug-2015, 8:13:49
+    Author     : innek_000
+*/
+
+/****FONT****/
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #665950;
+    font-size: 16px
+}
+h1{
+    color: #7ea107;
+    font-size: 4em;
+}
+h2 {
+    color: #7ea107;
+    font-size: 1.5em;
+}
+
+h3{
+    margin-top: 0.5em;
+}
+a, a:visited{
+    color: #4C86CF;
+    font-weight: bold;
+    text-decoration: none;
+}
+.huidig,
+a:hover{
+    color:#058; 
+}
+em{
+    color: #9A3098;
+    font-weight: bold;
+    font-style: normal;
+}
+form{
+    font-size: 0.8em;
+    color: white;        
+}
+.contact {
+    color: #665950;
+    font-size: 1em;
+   
+}
+header li a,
+header li a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: #665950;
+}
+
+header li a:hover,
+header li a:active,
+header li a.huidig
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #058;
+}
+
+.inleiding h2 {
+    color: #665950;
+    font-style: italic;
+}
+footer{
+    font-size: 0.8em;    
+}
+
+footer em{
+    font-style: italic;
+    font-weight: normal;
+    color: #665950;
+}
+
+.waar h1{
+    color: #9A3098;
+}
+
+.waar a{
+    color: #665950;
+}
+
+.team h2{
+    color: #9A3098;
+}
+
+.fotos a{
+    text-align: right;
+}
+.fotos a h3 {
+    color: #665950;
+    font-size: 1em;    
+}
+/**** STRUCTUUR ****/
+
+body {
+    width: 100%;
+    margin: 0;
+    background: #FCFAF8;
+}
+.span1{
+    width: 100%;  
+    margin: 0;
+    padding: 0;
+}
+.span2,
+.topbanner,
+header,
+footer{
+    width: 80%;  
+    max-width: 1100px;
+    margin:0 auto;
+}
+.randB{
+    border-top: 2px solid #DCDAD8;
+}
+.randO{
+    border-bottom: 2px solid #DCDAD8;
+}
+
+.span3 {
+    width: 69%;
+    float: left;
+    margin-right: 1%;    
+}
+
+.span4 {
+    width: 29%;
+    float: left; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 1%;
+}
+img{
+    border: 5px solid #E9DCE9;
+    box-shadow: rgba(0,0,0,0.3) 7px 7px 7px 7px;
+}
+
+/*topbanner*/
+
+.groen{
+    background-color: #8FB209;     
+}
+
+form {
+    float: right; 
+    margin: 0;
+}
+
+header img{
+    width: 20%;
+    border: none;
+    box-shadow: none;
+}
+
+header{
+    position: relative;
+    padding: 1%;
+}
+header ul{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+header li{
+    display: inline;
+    padding: 0.5em;
+    border-right: 1px solid #665950;
+}
+
+header li:last-child {border-right: none}
+
+/*inleiding*/
+.inleiding{
+    padding: 1%;
+}
+.inleiding img{
+    float: right;
+    width: 30%;
+    margin-top: 5%;    
+    box-shadow: rgba(0,0,0,0.3) 7px 7px 7px 7px;
+    transform: skew(-10deg) rotate(5deg);
+}
+
+/*waarom*/
+.donker{
+    background-color: #EBE8E5;
+}
+.waarom img{
+    float: left;
+    margin-top: -1%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 20%;   
+    transform: rotate(-5deg)
+}
+.waarom ul{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.waarom ul li{      
+    background: url(../img/check.png) no-repeat;
+    background-size: 10%;
+    display: inline-block;
+    vertical-align: top; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+    width: 30%;
+    padding-left: 4%;
+    margin-right: 2%;     
+    margin-bottom: 2%;
+}
+
+
+/*nieuws*/
+.nieuws{
+    padding: 2%;
+}
+article{
+    float:left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30%;
+    margin-right: 2%;
+    position: relative;
+}
+article:last-child {margin-right: 0%;}
+
+.nieuws img{
+    width:  10%;   
+    float: right;
+    margin-right: 2%;
+    margin-top: 0%
+}
+
+/**contactpagina**/
+/*waar*/
+
+.waar ul{
+    list-style-type: none;    
+}
+
+.afbeeldingen{
+   overflow: hidden;
+   height: 30em;
+   margin-bottom: 1em;
+   /*display: -webkit-flex;
+   display: -moz-flexbox;
+   display: flex;*/
+ }
+
+.afbeeldingen img{
+    border: none;
+    box-shadow: none;
+}
+#gmap{    
+    float: left;
+    margin-bottom: 2%;
+    height: 100%;
+    background-image: url(../img/gmap.png);
+    /*flex-order: 0;*/
+}
+
+/*<img src="../img/gmap.png" alt="kaart">*/
+.zijbeeld{    
+    float: left;
+    height: 40em;
+   /* flex-order: 1;    */
+    margin-bottom: 2%;     
+   }
+
+
+.zijbeeld .beeld1{
+    margin-right: 1%;
+    margin-bottom: 1%;
+    height: 54%;
+    width: 49%;
+    background-image:url(../img/env1.jpg);
+    background-size: 300%;
+    background-position: 60% 20%;
+    float: left;
+}
+
+.zijbeeld .beeld2{
+    margin-left: 1%;
+    margin-bottom: 1%;
+    height: 54%;
+    width: 49%; 
+    background-image:url(../img/env4.jpg);  
+    background-size: 200%;
+    
+    float: left;
+}
+/*<img src="../img/env4.jpg" alt="vdab">*/
+.zijbeeld .beeld3{
+    width: 39%;
+    float: left;
+    height: 45%;
+    margin-top: 2%;
+    margin-right: 1%;
+    margin-bottom: 0;
+    background-image: url(../img/env2.jpg);
+    background-size: 300%;
+}
+/*<<img src="../img/env2.jpg" alt="boeken">*/
+.zijbeeld .beeld4{
+    width: 59%;
+    overflow: hidden;
+    float: left;
+    height: 45%;
+    margin-top: 2%;
+    margin-left: 1%;
+    background-image: url(../img/env3.jpg);
+    background-size: 150%;
+}
+/*<img src="../img/env3.jpg" alt="scherm">*/
+
+/*vragen*/
+
+.vragen form div {
+    display: block;    
+    clear: left; 
+    margin: 4em 0;
+    padding: 0;   
+}
+.vragen label{
+    margin: 0.4em 0;
+}
+
+.vragen input,
+.vragen textarea {
+    margin: 0.4em 0;
+    float: right;
+    width: 70%;
+    min-height: 1em;   
+}
+
+input[type="checkbox"] {
+    width: 4%;
+    float: left;
+    display: inline;
+    text-align: left; 
+    margin: 0 0.4em 0 0;
+}
+input[type="submit"] {
+    margin: 1em auto;
+}
+.vragen form div label{
+    float: left;
+    text-align: left;
+}
+/** wie**/
+.wie img{
+    float:right;
+    width: 25%;
+    margin-top: 2%;    
+    transform: rotate(5deg);
+}
+
+.fotos ul li{
+    display: inline-block;
+    width: 24%;        
+}
+.fotos img{
+    margin-left: 20%;
+}
+.fotos ul li:nth-child(odd) img {
+    transform: rotate(-5deg);
+  }
+.fotos ul li:nth-child(even) img {
+    transform: rotate(5deg);    
+}
+
+/**wat**/
+
+.wat img{
+    float: right;
+    transform: rotate(5deg);
+    margin-top: 3%;
+}
+
+.activiteiten img{
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+    transform: rotate(-5deg);
+}
+/**** clearFix****/
+.clearFix:before,
+.clearFix:after {
+    content: "";
+    display: table;
+}
+
+.clearFix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearFix {
+    *zoom: 1;
+}
