@@ -1,4 +1,5 @@
-/*blauw: #5fbcd3ff,
+/*lichtblauw: #00D4CE,
+donkerblauw:#008783
 oranje: #d44b00fe,
 grijs: 666666ff*/
 
@@ -18,7 +19,7 @@ h1 {
     font-size: 4rem;
     position: relative;
     margin:1em 0;      
- } 
+} 
 
 h2 {
     font-weight: lighter;
@@ -38,7 +39,7 @@ footer{
     margin: 0;
     padding: 0;
     overflow: hidden;
-   
+
 }
 .span1 {
     padding: 0 1%;
@@ -75,10 +76,10 @@ nav li a:hover, nav li a:active {
 }
 /*titel*/
 header section:first-child {
-    background: #5fbcd3; 
+    background: #008783; 
 }
 header h1 {
-    color: #5fbcd3;
+    color: #008783;
     margin: 0;    
 }
 .banner .span1:first-child {
@@ -105,14 +106,14 @@ header h1 {
 #wie {
     background: #666666;
     color: white;
-       z-index: 0;
-       position: relative;
-    
-    
+    z-index: 0;
+    position: relative;
+
+
 }
 #wie h1 {
     color: #d44b00;  
-   
+
 }
 #wie p{
     line-height: 2em;
@@ -122,7 +123,7 @@ blockquote {
 }
 blockquote:before {
     content: open-quote;
-    color:#5fbcd3;
+    color:#00D4CE;
     font-family: 'Architects Daughter', cursive;
     font-size: 6em;
     vertical-align: -0.4em;
@@ -131,7 +132,7 @@ blockquote:before {
 }
 blockquote:after {
     content: close-quote;
-    color:#5fbcd3;
+    color:#00D4CE;
     font-family: 'Architects Daughter', cursive;
     font-size: 6em;
     vertical-align: -0.5em;
@@ -145,8 +146,8 @@ blockquote p {
 /***curriculum***/
 
 #curriculum h1 {
-    color: #5fbcd3;
-   
+    color: #008783;
+
 }
 
 .fa {
@@ -195,7 +196,8 @@ blockquote p {
 #kennis {
     background: #d44b00;
     z-index: 0;
-       position: relative;
+    position: relative;
+    color: #00D4CE;
 }
 
 #kennis h1 {
@@ -209,6 +211,7 @@ blockquote p {
     margin: 0 auto;
 }
 
+
 .skill {        
     text-align: center;
 }
@@ -216,6 +219,9 @@ blockquote p {
 #portfolio {
     z-index: 0;
     position: relative;
+}
+#portfolio h1{
+    color: white;
 }
 
 #portfolio .portfolio {
@@ -225,8 +231,8 @@ blockquote p {
 }
 
 .link  {
-      width: 12em; 
-     height: 12em;    
+    width: 12em; 
+    height: 12em;    
     display: block;
     border-radius: 50%;
     border: 5px solid #d44b00;
@@ -239,13 +245,13 @@ blockquote p {
 }
 
 footer{
-    background: #5fbcd3;
+    background: #008783;
     z-index: 0;
-       position: relative;
-    
+    position: relative;
+
 }
 footer h1 {
-    color: white;
+    color: #d44b00;
 }
 
 /*clearfix*/
@@ -284,109 +290,109 @@ footer h1 {
     h2 {
         display: none;
     }
-    
-    
-/*** ribbons***/
-
-/**ribon kleuren**/
-
-/*hoofdkleur*/
-.rb-oranje {
-    background: #d44b00;
-}
-.rb-blauw {
-    background: #5fbcd3;
-}
-.rb-wit {
-    background: white;    
-}
-.rb-grijs {
-    background: #666666;    
-}
-/*achterkant*/
-.rb-oranje:before, .rb-oranje:after {
-    border: 0.8em solid #bb4200;
-}
-.rb-blauw:before, .rb-blauw:after {
-    border: 0.8em solid #4bb4ce;
-}
-.rb-wit:before, .rb-wit:after {
-    border: 0.8em solid #fcfcfc;
-}
-.rb-grijs:before, .rb-grijs:after {
-    border: 0.8em solid #636363;
-}
-/*terugflap*/
-.rb-oranje .content:before, .rb-oranje .content:after {
-    border-color: #a13900 transparent transparent transparent;
-}
-.rb-blauw .content:before, .rb-blauw .content:after {
-    border-color: #329ab4 transparent transparent transparent;
-}
-.rb-wit .content:before, .rb-wit .content:after{
-    border-color: #f7f7f7 transparent transparent transparent;
-}
-.rb-grijs .content:before, .rb-grijs .content:after{
-     border-color: #5e5e5e transparent transparent transparent;
-}
 
 
-/*ribbon algemeen*/
-.ribbon {
-   padding: 0 2em;  
-   
-   }
-   
-  
-.ribbon:before, .ribbon:after {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: -0.45em;
-    z-index: -2;
-}
-.ribbon:before {
-    left: -1em;
-    border-right-width: 1em;
-    border-left-color: transparent;
-}
-.ribbon:after {
-    right: -1em;
-    border-left-width: 1em;
-    border-right-color: transparent;
-}
+    /*** ribbons***/
 
-.ribbon .content:before, .ribbon .content:after {
-    position: absolute;
-    display: block;
-    border-style: solid;
-    bottom: -0.7em;
-    content: '';
-    z-index: -1;
-}
-.ribbon .content:before {
-    left: 0%;
-    border-width: 0.8em 0 0 0.8em;
-    transform: skew(00deg, -32deg);
-}
+    /**ribon kleuren**/
 
-.ribbon .content:after {
-    right: 0;
-    border-width: 0.8em 0.8em 0 0;
-    transform: skew(00deg, 32deg);
-}
+    /*hoofdkleur*/
+    .rb-oranje {
+        background: #d44b00;
+    }
+    .rb-blauw {
+        background: #00D4CE;
+    }
+    .rb-wit {
+        background: white;    
+    }
+    .rb-grijs {
+        background: #B2B2B2;    
+    }
+    /*achterkant*/
+    .rb-oranje:before, .rb-oranje:after {
+        border: 0.8em solid #943400;
+    }
+    .rb-blauw:before, .rb-blauw:after {
+        border: 0.8em solid #009490;
+    }
+    .rb-wit:before, .rb-wit:after {
+        border: 0.8em solid #BFBFBF;
+    }
+    .rb-grijs:before, .rb-grijs:after {
+        border: 0.8em solid #666666;
+    }
+    /*terugflap*/
+    .rb-oranje .content:before, .rb-oranje .content:after {
+        border-color: #541E00 transparent transparent transparent;
+    }
+    .rb-blauw .content:before, .rb-blauw .content:after {
+        border-color: #008783 transparent transparent transparent;
+    }
+    .rb-wit .content:before, .rb-wit .content:after{
+        border-color: #7F7F7F transparent transparent transparent;
+    }
+    .rb-grijs .content:before, .rb-grijs .content:after{
+        border-color: #4C4C4C transparent transparent transparent;
+    }
+
+
+    /*ribbon algemeen*/
+    .ribbon {
+        padding: 0 2em;  
+
+    }
+
+
+    .ribbon:before, .ribbon:after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: -0.45em;
+        z-index: -2;
+    }
+    .ribbon:before {
+        left: -1em;
+        border-right-width: 1em;
+        border-left-color: transparent;
+    }
+    .ribbon:after {
+        right: -1em;
+        border-left-width: 1em;
+        border-right-color: transparent;
+    }
+
+    .ribbon .content:before, .ribbon .content:after {
+        position: absolute;
+        display: block;
+        border-style: solid;
+        bottom: -0.7em;
+        content: '';
+        z-index: -1;
+    }
+    .ribbon .content:before {
+        left: 0%;
+        border-width: 0.8em 0 0 0.8em;
+        transform: skew(00deg, -32deg);
+    }
+
+    .ribbon .content:after {
+        right: 0;
+        border-width: 0.8em 0.8em 0 0;
+        transform: skew(00deg, 32deg);
+    }
 
     /***header***/
-header {
-    position: relative;
-}
-.fixed {
-    position: fixed;
-    top: 0;
-left: 0;
-width: 100%;
-z-index: 100;
-}
+    header {
+        position: relative;
+    }
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
     header h2 {
         display: inline;
     }
@@ -449,14 +455,17 @@ z-index: 100;
 
 
 
-    
+
 
     /*curriculum*/
 
-    
-.studie,
+#curriculum h1 {
+    color: #00D4CE;
+
+}
+    .studie,
     .werk
-    
+
     {
         padding: 0;
         margin: 0 0 1.5em 0;     
@@ -494,9 +503,18 @@ z-index: 100;
     .envelop .fa-envelope,
     .boek .fa-book{
         color: white;  
+        
+    }
+    .boek .fa-book,
+    .koffer .fa-suitcase {
         -ms-transform: rotate(-15deg); /* IE 9 */
-    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
-    transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+        transform: rotate(-15deg);
+    }    
+    .hoed .fa-graduation-cap{
+        -ms-transform: rotate(15deg); /* IE 9 */
+        -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+        transform: rotate(15deg);
     }
 
 
@@ -516,7 +534,7 @@ z-index: 100;
 
 
     .studie, .werk {
-        border-bottom: 1px solid #5fbcd3;
+        border-bottom: 1px solid #008783;
         padding: 0 0 1em 0;
 
     }
@@ -532,7 +550,7 @@ z-index: 100;
     }
     .envelop .fa-envelope,
     .linkedin .fa-linkedin{
-        color: #5fbcd3;
+        color: #008783;
     }
     .email {
         width: 100%;
