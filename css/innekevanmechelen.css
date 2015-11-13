@@ -112,7 +112,7 @@ header h1 {
 
 }
 #wie h1 {
-    color: #d44b00;  
+    color: white;  
 
 }
 #wie p{
@@ -123,7 +123,7 @@ blockquote {
 }
 blockquote:before {
     content: open-quote;
-    color:#00D4CE;
+    color:#008783;
     font-family: 'Architects Daughter', cursive;
     font-size: 6em;
     vertical-align: -0.4em;
@@ -132,7 +132,7 @@ blockquote:before {
 }
 blockquote:after {
     content: close-quote;
-    color:#00D4CE;
+    color:#008783;
     font-family: 'Architects Daughter', cursive;
     font-size: 6em;
     vertical-align: -0.5em;
@@ -197,13 +197,17 @@ blockquote p {
     background: #d44b00;
     z-index: 0;
     position: relative;
-    color: #00D4CE;
+    color: white;
 }
 
-#kennis h1 {
-    color: #666666;
+#kennis h1{
+    color: white;
 }
 
+#kennis h2 {
+    color: white;
+    margin-bottom: 1em;
+}
 
 .percent{
     width: 7.5em; 
@@ -248,10 +252,11 @@ footer{
     background: #008783;
     z-index: 0;
     position: relative;
+    color: white;
 
 }
 footer h1 {
-    color: #d44b00;
+    color: white;
 }
 
 /*clearfix*/
@@ -287,7 +292,7 @@ footer h1 {
         font-size: 4em;
     }
 
-    h2 {
+    #curriculum h2 {
         display: none;
     }
 
@@ -432,7 +437,10 @@ footer h1 {
         text-align: right;       
 
     }
+    #wie h1 {
+        color: #d44b00;  
 
+    }
     #wie p {
         text-align: justify;
     }
@@ -459,10 +467,10 @@ footer h1 {
 
     /*curriculum*/
 
-#curriculum h1 {
-    color: #00D4CE;
+    #curriculum h1 {
+        color: white;
 
-}
+    }
     .studie,
     .werk
 
@@ -503,7 +511,7 @@ footer h1 {
     .envelop .fa-envelope,
     .boek .fa-book{
         color: white;  
-        
+
     }
     .boek .fa-book,
     .koffer .fa-suitcase {
@@ -544,13 +552,24 @@ footer h1 {
 
     /*kennis*/
     /*contact*/
-    .envelop .fa,
+    #kennis h1 {
+        color: #008783;
+    } 
+
+    footer h1{
+        color: #d44b00;
+    }
+    
+    .github .fa,
     .linkedin .fa{
         color: white;
+        display: block;
     }
-    .envelop .fa-envelope,
+    .github .fa-github-alt,
     .linkedin .fa-linkedin{
         color: #008783;
+        
+       
     }
     .email {
         width: 100%;
