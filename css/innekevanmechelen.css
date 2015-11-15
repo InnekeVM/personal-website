@@ -51,6 +51,12 @@ footer{
     justify-content: space-around;
 }
 
+.midden {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
 /***header***/
 /*nav*/
 
@@ -84,6 +90,7 @@ header h1 {
 }
 .banner .span1:first-child {
     padding-bottom: 0;
+    margin-top: 3em;
 }
 .banner .span1:last-child {
     padding-top: 0;
@@ -108,9 +115,8 @@ header h1 {
     color: white;
     z-index: 0;
     position: relative;
-
-
 }
+
 #wie h1 {
     color: white;  
 
@@ -177,8 +183,11 @@ blockquote p {
 #curriculum p {
     font-size: 0.8em;
 }
-#curriculum section {
+#curriculum article {
     margin: 1.5em 0;
+}
+.hoed {
+    padding-left: 15px;
 }
 
 
@@ -212,12 +221,15 @@ blockquote p {
 .percent{
     width: 7.5em; 
     padding: 0;
-    margin: 0 auto;
+    margin: 0 1em;;
 }
 
 
 .skill {        
     text-align: center;
+}
+#talen .fa{
+    color: #00D4CE;
 }
 /*portfolio*/
 #portfolio {
@@ -225,7 +237,7 @@ blockquote p {
     position: relative;
 }
 #portfolio h1{
-    color: white;
+    color:#008783;
 }
 
 #portfolio .portfolio {
@@ -556,6 +568,9 @@ footer h1 {
         color: #008783;
     } 
 
+    #portfolio h1 {
+        color:white;
+    }
     footer h1{
         color: #d44b00;
     }
