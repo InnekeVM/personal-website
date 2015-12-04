@@ -1,9 +1,11 @@
-/*lichtblauw: #00D4CE,
-donkerblauw:#008783
-oranje: #d44b00fe,
-grijs: 666666ff*/
+/*
+    lichtblauw:  #00d4ce
+    donkerblauw: #008783
+    oranje:      #d44b00
+    grijs:       #666666
+*/
 
-/*mobile first*/
+/* mobile first */
 
 body {
     font-family: 'Lato', sans-serif;
@@ -14,11 +16,12 @@ body {
     color: #666666;
     background-image: url(../img/crossword.png);
 }
+
 h1 {
     font-family:'Architects Daughter', cursive;
     font-size: 4rem;
     position: relative;
-    margin:1em 0;      
+    margin:1em 0;
 } 
 
 h2 {
@@ -33,58 +36,43 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
 header,
 section,
 footer{    
     margin: 0;
-    padding: 0;
+    padding: 2em 0.5em;
     overflow: hidden;
+    text-align: center;
+}
 
+article {
+    text-align: left;
 }
-.span1 {
-    padding: 0 1%;
+
+section h1,
+footer h1 {
+    display: inline-block;
 }
+
 .center {
-    display: -webkit-box; 
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    text-align: center;
 }
 
-.midden {
-    display: -webkit-box; 
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}  
+/***nav***/
 
-/***header***/
-/*nav*/
+nav {
+    background: #008783; 
+}
 
 nav ul {
     display: block;
-    margin: 0;
-    padding: 2% 1%;
+    margin: 0 auto;
+    padding: 1em;
 }
 nav li {
-    margin: 1% 0;
+    margin: 0.5em 0;
     display: block;
-
 }
 
 nav li a {
@@ -96,24 +84,23 @@ nav li a:hover, nav li a:active {
     color: #d44b00;
     text-decoration: none;
 }
-/*titel*/
-header section:first-child {
-    background: #008783; 
-}
+
+/***header***/
 header h1 {
     color: #008783;
-    margin: 0;    
-}
-.banner .span1:first-child {
+    margin: 0;
     padding-bottom: 0;
-    margin-top: 3em;
+    margin-top: 1em;
+    text-align: center;
 }
-.banner .span1:last-child {
-    padding-top: 0;
+
+header h2 {
+    text-align: center;
 }
+
 #wie .foto {
-    width: 20em;
-    height: 20em;
+    width: 15em;
+    height: 15em;
     background-image: url(../img/DSC_0283.jpg);
     background-size: 100%;
     display: block;
@@ -121,8 +108,9 @@ header h1 {
     border: 5px solid #d44b00;
     margin: 2% auto;
 }
+
 .span1 {
-    padding: 4% 0;
+    padding: 2em;
 }
 
 /***wie***/
@@ -135,6 +123,7 @@ header h1 {
 
 #wie h1 {
     color: white;  
+    text-align: center;
 
 }
 #wie p{
@@ -144,21 +133,21 @@ blockquote {
     border: none;        
 }
 blockquote:before {
-    content: open-quote;
+    content: '"';
     color:#008783;
     font-family: 'Architects Daughter', cursive;
     font-size: 6em;
     vertical-align: -0.4em;
-    margin-right: 0.25em;
+    margin-right: 0.10em;
     line-height: 0em;
 }
 blockquote:after {
-    content: close-quote;
+    content: '"';
     color:#008783;
     font-family: 'Architects Daughter', cursive;
     font-size: 6em;
     vertical-align: -0.5em;
-    margin-left: 0.25em;
+    margin-left: 0.10em;
     line-height: 0em;
 }
 blockquote p {
@@ -169,11 +158,6 @@ blockquote p {
 
 #curriculum h1 {
     color: #008783;
-
-}
-
-.fa {
-    display: hide;   
 }
 
 #curriculum h2 {
@@ -183,6 +167,7 @@ blockquote p {
 .periode {
     color:  #d44b00;
 }
+
 #curriculum h2,
 #curriculum h3,
 #curriculum h4,
@@ -191,6 +176,7 @@ blockquote p {
 }
 #curriculum h3 {
     font-size: 1em;
+    font-weight: bold;
 }
 #curriculum h4 {
     font-size: 1em;
@@ -206,20 +192,15 @@ blockquote p {
     padding-left: 15px;
 }
 
-#curriculum article{
-    margin-bottom:10em;
+#curriculum .studie,
+#curriculum .werk {
+    padding: 0;
+    margin: 0 0 1em 0;
 }
 
-
-/*
-#curriculum h3:before {
-    content: '• ';
-    color: #5fbcd3;
+#curriculum article {
+    margin-bottom: 2em;
 }
-#curriculum h3:after {
-    content: ' •';
-    color: #5fbcd3;
-}*/
 
 /*kennis*/
 #kennis {
@@ -236,24 +217,32 @@ blockquote p {
 #kennis h2 {
     color: white;
     margin-bottom: 1em;
+    clear: both;
+    text-align: left;
 }
-#informatica, #grafisch {
-    max-width: 900px;
-    margin: 0 auto;
+
+#kennis article#informatica div,
+#kennis article#grafisch div {
+    text-align: center;
 }
-.percent{
+
+.percent {
     width: 7.5em; 
     padding: 0;
     margin: 0 1em;;
-}
-
-
-.skill {        
+    display: inline-block;
     text-align: center;
 }
-#talen .fa{
+
+#kennis #talen .fa {
     color: #00D4CE;
 }
+
+#kennis #talen .taal {
+    display: inline-block; 
+    width: 7em;
+}
+
 /*portfolio*/
 #portfolio {
     z-index: 0;
@@ -288,10 +277,23 @@ footer{
     z-index: 0;
     position: relative;
     color: white;
-
 }
 footer h1 {
     color: white;
+}
+
+footer .fa{
+    color: white;
+    display: block;
+}
+
+footer .fa-github-alt,
+footer .fa-linkedin {
+    color: #008783;
+}
+
+footer .logos {
+    text-align: center;
 }
 
 /*clearfix*/
@@ -313,30 +315,11 @@ footer h1 {
 .cf {
     *zoom: 1;
 }
-@media screen and (min-width: 970px) {
-    .row {
-        position: relative;
-    }
-    .span1 {
-        width: 80%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
 
-    h1 {
-        font-size: 4em;
-    }
-
-    #curriculum h2 {
-        display: none;
-    }
-
-
+@media screen and (min-width:768px){
     /*** ribbons***/
 
-    /**ribon kleuren**/
-
-    /*hoofdkleur*/
+    /* hoofdkleur */
     .rb-oranje {
         background: #d44b00;
     }
@@ -349,7 +332,8 @@ footer h1 {
     .rb-grijs {
         background: #B2B2B2;    
     }
-    /*achterkant*/
+
+    /* achterkant */
     .rb-oranje:before, .rb-oranje:after {
         border: 0.8em solid #943400;
     }
@@ -362,7 +346,8 @@ footer h1 {
     .rb-grijs:before, .rb-grijs:after {
         border: 0.8em solid #666666;
     }
-    /*terugflap*/
+
+    /* terugflap */
     .rb-oranje .content:before, .rb-oranje .content:after {
         border-color: #541E00 transparent transparent transparent;
     }
@@ -376,13 +361,10 @@ footer h1 {
         border-color: #4C4C4C transparent transparent transparent;
     }
 
-
-    /*ribbon algemeen*/
+    /* ribbon algemeen */
     .ribbon {
         padding: 0 2em;  
-
     }
-
 
     .ribbon:before, .ribbon:after {
         content: "";
@@ -391,11 +373,13 @@ footer h1 {
         bottom: -0.45em;
         z-index: -2;
     }
+
     .ribbon:before {
         left: -1em;
         border-right-width: 1em;
         border-left-color: transparent;
     }
+
     .ribbon:after {
         right: -1em;
         border-left-width: 1em;
@@ -410,12 +394,14 @@ footer h1 {
         content: '';
         z-index: -1;
     }
+
     .ribbon .content:before {
         left: 0%;
         border-width: 0.8em 0 0 0.8em;
         -webkit-transform: skew(00deg, -32deg);
         -moz-transform:skew(00deg, -32deg);
         -o-transform:skew(00deg, -32deg);
+        -ms-transform: skew(00deg, -32deg);
         transform: skew(00deg, -32deg);
     }
 
@@ -425,136 +411,109 @@ footer h1 {
         -webkit-transform: skew(00deg, 32deg);
         -moz-transform:skew(00deg, 32deg);
         -o-transform:skew(00deg, 32deg);
+        -ms-transform:skew(00deg, 32deg);
         transform: skew(00deg, 32deg);
     }
+    /*navigatiebalk*/
 
-    /***header***/
-    header {
-        position: relative;
-    }
-    .fixed {
+    nav {
+        padding: 0.8em 0;
+        text-align: center;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 100;
     }
-    header h2 {
-        display: inline;
-    }
-
-    /*navigatiebalk*/
-
-    .navigatie {
-        padding: 0.8em 0;
-    }
     nav ul {
-        float: right;       
-        margin: 0;
         padding: 0;
+        display: inline-block;
     }
-    nav li{
+    nav li {
         float: left; 
         margin: 0 1em;
     }
-    /*nav li a{
-        background: white;
-        color: #666666;
-        display: block;
-        width: 6em;
-        height: 6em;
-        border-radius: 50%; 
-        text-align: center;
-        line-height: 6em;
-    }
-    nav li a:hover, active {
-        background-color: #d44b00;
-        color: white;
-        text-decoration: none;
-    }*/
-    /*titel*/
-
-    header section:last-child {
-        text-align: right;       
-
-    }
+    /*wie*/
     #wie h1 {
         color: #d44b00;  
-
     }
+    
+    /*curriculum*/
+    #curriculum h1 {
+        color: white;
+    }
+    
+    /*kennis*/
+    #kennis h1 {
+        color: #008783;
+    } 
+
+    /*portfolio*/
+    #portfolio h1 {
+        color: white;
+    }
+
+    /*contact*/
+    footer h1 {
+        color: #d44b00;
+    }
+}
+@media screen and (min-width: 992px) {
+    .row {
+        position: relative;
+    }
+    .span1 {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+
+
+
+    /***header***/
+    header {
+        position: relative;
+    }
+
+
+    /* wie */
+
     #wie p {
         text-align: justify;
     }
 
-    .vertical-center {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
-    .reverse {
-        -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
-    }
-    .pull-sm-right {
-        float: right;
-    }
     #wie .foto {
         float: right;
+        width: 20em;
+        height: 20em;
     }
 
+    /* curriculum */
 
 
-
-
-
-    /*curriculum*/
-
-    #curriculum h1 {
-        color: white;
-
-    }
     .studie,
-    .werk
-
-    {
+    .werk {
         padding: 0;
         margin: 0 0 1.5em 0;     
     }
-    .flip-l h1 span {
 
-        /*-webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        display: inline-block;
-        transform-origin: top left;
-        margin-top: 100%;*/
-    }
-
-
-    /* .hoed,
-     .koffer {
-         width: 6em;
-         height: 6em;
-         border-radius: 50%;
-         border: 1px solid #d44b00;       
-         margin: 1em 0;
-     }*/
     .hoed,
     .koffer,
     .boek {
         font-size: 2em;
     }
+
     .hoed .fa,
     .koffer .fa,
     .boek .fa {
         color: #d44b00;       
     }
+
     .hoed .fa-graduation-cap,
     .koffer .fa-suitcase ,
     .envelop .fa-envelope,
@@ -562,6 +521,7 @@ footer h1 {
         color: white;  
 
     }
+
     .boek .fa-book,
     .koffer .fa-suitcase {
         -ms-transform: rotate(-15deg); /* IE 9 */
@@ -574,58 +534,17 @@ footer h1 {
         transform: rotate(15deg);
     }
 
-
-    /*i{
-        border-radius: 50%;
-        background: #d44b00;
-        color: white;
-        margin: 1em 0;
-        text-align: center;
-        width: 1.5em;
-        height: 1.5em;
-        line-height: 1.5em;
-        vertical-align: central;
-    }*/
-
-
-
-
-    .studie, .werk {
-        border-bottom: 1px solid #008783;
+    #curriculum .studie, 
+    #curriculum .werk {
+        border-bottom: 1px solid #ccc;
         padding: 0 0 1em 0;
-
-    }
-    #werk {
-
     }
 
-    /*kennis*/
-    /*contact*/
-    #kennis h1 {
-        color: #008783;
-    } 
-
-    #portfolio h1 {
-        color:white;
-    }
-    footer h1{
-        color: #d44b00;
+    #curriculum article {
+        margin-bottom:10em;
     }
 
-    .github .fa,
-    .linkedin .fa{
-        color: white;
-        display: block;
-    }
-    .github .fa-github-alt,
-    .linkedin .fa-linkedin{
-        color: #008783;
 
 
-    }
-    .email {
-        width: 100%;
-    }
 
-} 
-
+}

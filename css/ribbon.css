@@ -1,0 +1,93 @@
+/* hoofdkleur */
+.rb-oranje {
+    background: #d44b00;
+}
+.rb-blauw {
+    background: #00D4CE;
+}
+.rb-wit {
+    background: white;    
+}
+.rb-grijs {
+    background: #B2B2B2;    
+}
+
+/* achterkant */
+.rb-oranje:before, .rb-oranje:after {
+    border: 0.8em solid #943400;
+}
+.rb-blauw:before, .rb-blauw:after {
+    border: 0.8em solid #009490;
+}
+.rb-wit:before, .rb-wit:after {
+    border: 0.8em solid #BFBFBF;
+}
+.rb-grijs:before, .rb-grijs:after {
+    border: 0.8em solid #666666;
+}
+
+/* terugflap */
+.rb-oranje .content:before, .rb-oranje .content:after {
+    border-color: #541E00 transparent transparent transparent;
+}
+.rb-blauw .content:before, .rb-blauw .content:after {
+    border-color: #008783 transparent transparent transparent;
+}
+.rb-wit .content:before, .rb-wit .content:after{
+    border-color: #7F7F7F transparent transparent transparent;
+}
+.rb-grijs .content:before, .rb-grijs .content:after{
+    border-color: #4C4C4C transparent transparent transparent;
+}
+
+/* ribbon algemeen */
+.ribbon {
+    padding: 0 2em;  
+}
+
+.ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -0.45em;
+    z-index: -2;
+}
+
+.ribbon:before {
+    left: -1em;
+    border-right-width: 1em;
+    border-left-color: transparent;
+}
+
+.ribbon:after {
+    right: -1em;
+    border-left-width: 1em;
+    border-right-color: transparent;
+}
+
+.ribbon .content:before, .ribbon .content:after {
+    position: absolute;
+    display: block;
+    border-style: solid;
+    bottom: -0.7em;
+    content: '';
+    z-index: -1;
+}
+
+.ribbon .content:before {
+    left: 0%;
+    border-width: 0.8em 0 0 0.8em;
+    -webkit-transform: skew(00deg, -32deg);
+    -moz-transform:skew(00deg, -32deg);
+    -o-transform:skew(00deg, -32deg);
+    transform: skew(00deg, -32deg);
+}
+
+.ribbon .content:after {
+    right: 0;
+    border-width: 0.8em 0.8em 0 0;
+    -webkit-transform: skew(00deg, 32deg);
+    -moz-transform:skew(00deg, 32deg);
+    -o-transform:skew(00deg, 32deg);
+    transform: skew(00deg, 32deg);
+}
