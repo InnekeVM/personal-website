@@ -22,4 +22,6 @@ if (isset($_POST["submit"])) {
         }
     }
 }
+            echo "<script>location.assign(\"/\");</script>";
+
 ?>
