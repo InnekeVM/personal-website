@@ -319,12 +319,6 @@
 
             </article>
 
-            <div class="span1">
-                <h3>Toepassen:</h3>
-                <p>UML, GIT, Bootstrap</p>
-            </div>
-
-
             <article id="grafisch">
                 <div class="span1">
                     <h2>Skills grafisch</h2>
