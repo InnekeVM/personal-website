@@ -9,10 +9,37 @@
         <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
-        <script src="jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
         <link href="css/circle.css" rel="stylesheet">
         <link href="css/innekevanmechelen.css" rel="stylesheet" type="text/css"/>
+   
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $("nav ul li a[href^='#']").on('click', function(e) {
+
+                   // prevent default anchor click behavior
+                   e.preventDefault();
+
+                   // store hash
+                   var hash = this.hash;
+
+                   // animate
+                   $('html, body').animate({
+                       scrollTop: $(hash).offset().top
+                     }, 300, function(){
+
+                       // when done, add hash to url
+                       // (default click behaviour)
+                       window.location.hash = hash;
+                     });
+
+                });
+
+            });
+        </script>
+        
     </head>
     <body>
 
