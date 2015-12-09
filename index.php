@@ -548,7 +548,7 @@
 
             <div class="logos">
                 <a href="https://www.linkedin.com/in/inneke-van-mechelen-51142b53"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x"></i></span></a>
-                <a href="https://github.com/InnekeVM/personal-website/blob/master/index.html"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github-alt fa-stack-1x"></i></span></a>
+                <a href="https://github.com/InnekeVM/"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github-alt fa-stack-1x"></i></span></a>
             </div>
 
         </footer>
