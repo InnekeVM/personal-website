@@ -13,33 +13,33 @@
 
         <link href="css/circle.css" rel="stylesheet">
         <link href="css/innekevanmechelen.css" rel="stylesheet" type="text/css"/>
-   
+
         <script type="text/javascript">
-            $(document).ready(function() {
+            $(document).ready(function () {
 
-                $("nav ul li a[href^='#']").on('click', function(e) {
+                $("nav ul li a[href^='#']").on('click', function (e) {
 
-                   // prevent default anchor click behavior
-                   e.preventDefault();
+                    // prevent default anchor click behavior
+                    e.preventDefault();
 
-                   // store hash
-                   var hash = this.hash;
+                    // store hash
+                    var hash = this.hash;
 
-                   // animate
-                   $('html, body').animate({
-                       scrollTop: $(hash).offset().top
-                     }, 300, function(){
+                    // animate
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 300, function () {
 
-                       // when done, add hash to url
-                       // (default click behaviour)
-                       window.location.hash = hash;
-                     });
+                        // when done, add hash to url
+                        // (default click behaviour)
+                        window.location.hash = hash;
+                    });
 
                 });
 
             });
         </script>
-        
+
     </head>
     <body>
 
@@ -180,7 +180,7 @@
                         <div class="werk row">    
                             <div class="periode col-md-3"><p>maart 2013 - april 2015</p></div>
                             <div class="col-md-9">
-                                 <h3>Indicator</h3>
+                                <h3>Indicator</h3>
                                 <h4>Administratief bediende</h4>                        
                                 <p>Verwerken van klantgegevens in ERP-systeem.</p>
                                 <p>Interimcontract</p>
@@ -188,22 +188,13 @@
                         </div>
 
                         <div class="werk row"> 
-                            <div class="periode col-md-3"><p>april 2011 - juni 2011</p></div>
+                            <div class="periode col-md-3"><p>maart 2011 - november 2011</p></div>
                             <div class="col-md-9">
-                                <h3>Maria Assumptalyceum</h3>
+                                <h3>Vlaams Ministerie voor Onderwijs</h3>
                                 <h4>Godsdienstleerkracht</h4>                        
                                 <p>Alle jaren ASO-BSO-TSO</p>
-                                <p>Tijdelijke functie</p>
-                            </div>
-                        </div>
-
-                        <div class="werk row">  
-                            <div class="periode col-md-3"><p>maart 2011 - april 2011</p></div>
-                            <div class="col-md-9">
-                                <h3>VTI Leuven</h3>
-                                <h4>Godsdienstleerkracht</h4>
-                                <p>Eerste graad</p>
-                                <p>Tijdelijke functie</p>
+                                <p>Tijdelijke opdrachten in:<br>
+                                    VTI Leuven, Maria Assumptalyceum Laken, Zaventems Vrij Onderwijs</p>
                             </div>
                         </div>
 
